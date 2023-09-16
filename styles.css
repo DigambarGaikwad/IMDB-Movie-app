@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 5px solid red; */
+    height: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    max-width: 90vw; 
+    margin:  auto;
+    text-align: center;
+    padding: 20px;
+    /* border: 5px solid blue; */
+    border-radius: 20px;
+    height: 90%;
+    min-height: 95vh;
+    background-color: #242A32;
+}
+
+h1 {
+    font-size: 45px;
+    /* text-shadow: 2px 7px 2px rgb(148, 134, 134); */
+    -webkit-text-stroke: 2px 
+    #0296E5; 
+    /* Add a border around each character */
+    -webkit-text-fill-color: transparent;
+     /* Make the text transparent inside the border */
+  
+}
+
+.hints p:first-child{
+    font-size: 30px;
+}
+
+.input-container {
+    
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid aqua; */
+    margin: auto;
+}
+
+input[type="text"] {
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 10px;
+    background: #3A3F47;
+    color: white;
+    width: 90%;
+    
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    width: max-content;
+    align-self: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    display: none;
+    animation: spin 2s linear infinite;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+.movie-results {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+    background-color: #161b21;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.movie-poster {
+    max-width: 100%;
+    height: auto;
+}
+.know-more{
+    /* text-decoration: none; */
+    color: #fff;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
